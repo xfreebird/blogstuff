@@ -20,6 +20,8 @@ void SetupJumpList() {
 
     //commit list
     destinationList->CommitList();
+    objectArray->Release();
+    destinationList->Release();
 }
 
 MainWindow::MainWindow(QWidget *parent) :
