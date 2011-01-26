@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-TARGET = jumplist_example2
+TARGET = jumplist_example3
 TEMPLATE = app
 
 
