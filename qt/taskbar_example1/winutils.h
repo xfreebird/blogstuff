@@ -44,9 +44,6 @@ typedef enum TBPFLAG
 
 DECLARE_INTERFACE_(ITaskbarList3,IUnknown)
 {
-    STDMETHOD (QueryInterface) (THIS_ REFIID riid,void **ppv) PURE;
-    STDMETHOD_(ULONG,AddRef) (THIS) PURE;
-    STDMETHOD_(ULONG,Release) (THIS) PURE;
     STDMETHOD (HrInit) (THIS) PURE;
     STDMETHOD (AddTab) (THIS_ HWND hwnd) PURE;
     STDMETHOD (DeleteTab) (THIS_ HWND hwnd) PURE;
