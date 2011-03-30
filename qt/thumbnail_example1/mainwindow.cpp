@@ -114,11 +114,9 @@ bool MainWindow::winEvent(MSG * message, long * result)
         break;
 
     case WM_DWMSENDICONICLIVEPREVIEWBITMAP: {
-            HBITMAP hbitmap = m_thumbnail.toWinHBITMAP();
-            POINT point;
-            point.x = 0; point.y = 0;
+            HBITMAP hbitmap = QPixmap::grabWidget(this).scaled(this->size(), Qt::KeepAspectRatio).toWinHBITMAP();
 
-            DwmSetIconicLivePreviewBitmap(this->winId(), hbitmap, &point, 0);
+            DwmSetIconicLivePreviewBitmap(this->winId(), hbitmap, 0, 0);
             if (hbitmap) DeleteObject(hbitmap);
         }
         break;
