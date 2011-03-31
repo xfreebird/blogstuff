@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>add.png</file>
+        <file>feed.png</file>
+        <file>flag.png</file>
+        <file>home.png</file>
+        <file>logo.png</file>
+    </qresource>
+</RCC>
